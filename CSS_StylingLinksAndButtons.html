@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling Links & Buttons</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@1&display=swap" rel="stylesheet">
+    <style>
+        .container {
+            border: 4px solid rgb(226, 230, 11);
+            color: aqua;
+            background-color: rgb(5, 5, 5);
+            padding: 34px;
+            margin: 34px auto;
+            width: 800px;
+            border-radius: 20px;
+
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        a:hover {
+            color: aqua;
+            background-color: black;
+            font-weight: bold;
+        }
+        
+        a:active {
+            color: white;
+            background-color: blue;
+        }
+        
+        
+        a:visited {
+            background-color: black;
+            color: aqua;
+            
+        }
+        
+        button:hover {
+            color: aqua;
+            background-color: black;
+            font-weight: bold;
+        }
+        
+        .btn:hover{
+            border: 2px solid aqua;
+            
+        }
+
+        button:active {
+            color: white;
+            background-color: blue;
+        }
+        
+        .btn {
+            background-color: rgb(255, 238, 7);
+            font-family: 'Roboto Mono', monospace;
+            border: none;
+            cursor: pointer;
+            padding: 6px;
+            font-size: 13px;
+            border-radius: 5px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container" id="details">
+        <h2>This is my heading</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi sunt deleniti, tempora nisi magni, odio
+            quos porro necessitatibus culpa velit ea libero reprehenderit incidunt qui amet dolorem id nemo facere
+            voluptatibus magnam repudiandae quibusdam nostrum sint. Dolor sequi voluptatum beatae incidunt ex
+            reprehenderit eaque, praesentium, fugit optio mollitia rerum odio!</p>
+        <a href="https://facebook.com" class="btn">Read more</a>
+        <button class="btn">Contact us</button>
+    </div>
+</body>
+
+</html>
