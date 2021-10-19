@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asion Fitness</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background: url('Gym/Background-3.jpg');
+            width: 1000px;
+        }
+        /* left properties */
+        
+        .left {
+            position: absolute;
+            left: 43px;
+            top: 47px;
+            display: inline-block;
+        }
+        
+        .left div {
+            width: 206px;
+            padding: 10px 0px;
+            font-size: 28px;
+            text-align: center;
+            font-family: 'Baloo Bhai 2', cursive;
+            font-weight: bold;
+        }
+        
+        .left div:hover {
+            color: rgb(65, 105, 225);
+            font-size: 30px;
+            cursor: poi2ter;
+        }
+        
+        .left .logo {
+            font-family: 'Dancing Script', cursive;
+            padding: 0px 0px;
+            margin: -20px -1px;
+        }
+        /* Center properties */
+        
+        .center {
+            display: block;
+            width: 80%;
+            margin: 20px 351px;
+        }
+        
+        .navbar {
+            display: inline-block;
+        }
+        
+        .navbar li {
+            display: inline-block;
+            color: black;
+        }
+        
+        .navbar li a {
+            text-decoration: none;
+            color: black;
+            padding: 20px 20px;
+            font-size: 25px;
+            font-family: 'Bebas Neue', cursive;
+            transition: all 0.4s;
+        }
+        
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: none;
+            font-size: 35px;
+            /* text-decoration: underline; */
+            color: rgb(21, 217, 231);
+        }
+        /* Right Properties */
+        
+        .right {
+            position: absolute;
+            right: 22px;
+            top: 20px;
+            display: inline-block;
+        }
+        
+        .btn {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 25px;
+            border: 1px solid black;
+            border-radius: 10px;
+            margin: 15px -2px;
+            padding: 4px 15px;
+        }
+        
+        .right #btn1 {
+            width: 100px;
+            background-color: rgb(180, 189, 194);
+        }
+        
+        .right #btn2 {
+            width: 100px;
+            background-color: rgb(180, 189, 194);
+        }
+        
+        .right #btn1:hover {
+            font-size: 25px;
+            cursor: pointer;
+            background-color: rgb(231, 245, 240);
+        }
+        
+        .right #btn2:hover {
+            font-size: 25px;
+            cursor: pointer;
+            background-color: rgb(231, 245, 240);
+        }
+        /* Form section */
+        
+        .container {
+            /* border: 5px solid aqua; */
+            margin: 224px 597px;
+            padding: 28px 23px;
+            width: 49%;
+            border-radius: 30px;
+        }
+        
+        .form-group input {
+            text-align: center;
+            display: block;
+            width: 370px;
+            padding: 6px;
+            border-radius: 16px;
+            font-size: 20px;
+            margin: 9px auto;
+        }
+        
+        .container #btn3 {
+            text-align: center;
+            display: block;
+            width: 194px;
+            padding: 6px 6px;
+            border-radius: 16px;
+            font-size: 20px;
+            margin: -1px 52px;
+            border: 2px solid black;
+            /* float: left; */
+        }
+        
+        .container #btn4 {
+            text-align: center;
+            display: block;
+            width: 186px;
+            padding: 6px 6px;
+            border-radius: 16px;
+            font-size: 20px;
+            margin: -42px 249px;
+            border: 2px solid black;
+            /* float: right; */
+        }
+        
+        .container #btn3:hover {
+            background-color: rgb(245, 245, 220);
+        }
+        
+        .container #btn4:hover {
+            background-color: rgb(245, 245, 220);
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- Left box for logo -->
+        <div class="left">
+            <div class="logo">AF</div>
+            <div>Asion Fitness</div>
+        </div>
+
+        <!-- Center box for navigation bar -->
+        <div class="center">
+
+            <div class="navbar">
+                <ul class="navbar">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Coaches</a></li>
+                    <li><a href="#">Contact </a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- right box for seach -->
+        <div class="right">
+            <button class="btn" id="btn1">Register</button>
+            <button class="btn" id="btn2">Login</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Join the best GYM of Rajshahi now</h1>
+        <form action="form.php">
+            <div class="form-group">
+                <input type="text" placeholder="Enter Email">
+            </div>
+            <form action="form.php">
+                <div class="form-group">
+                    <input type="text" placeholder="Enter name">
+                </div>
+                <form action="form.php">
+                    <div class="form-group">
+                        <input type="text" placeholder="Enter password">
+                    </div>
+                    <form action="form.php">
+                        <div class="form-group">
+                            <input type="text" placeholder="Enter confirm password">
+                        </div>
+
+                        <button class="btn" id="btn3">Submit</button>
+                        <button class="btn" id="btn4">Cancel</button>
+                    </form>
+    </div>
+</body>
+
+</html>
