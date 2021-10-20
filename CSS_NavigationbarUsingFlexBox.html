@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar Using Flexbox</title>
+    <style>
+        .MenuSection {
+            height: 600px;
+            width: 100%;
+            border: 2px solid blue;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+        }
+        /* Logo Section */
+        
+        .logo {
+            width: 255px;
+            height: 64px;
+            border-radius: 10px;
+            border: 2px solid rgb(202, 16, 16);
+        }
+        /* Navigation Section */
+        
+        .navbar {
+            width: 1274px;
+            border: 2px solid black;
+            height: 64px;
+            border-radius: 11px;
+        }
+        
+        .navbar li {
+            list-style: none;
+            font-size: 20px;
+            margin: 10px 10px;
+            float: left;
+        }
+        
+        .navbar li a {
+            text-decoration: none;
+            padding: 0px 13px;
+            color: aqua;
+        }
+        /* Login section      */
+        
+        .login {
+            width: 281px;
+            height: 65px;
+            border-radius: 11px;
+            border: 2px solid rgb(12, 119, 21);
+        }
+    </style>
+</head>
+
+<body>
+    <header class="MenuSection">
+        <div class="logo">
+            <div>Flexbox</div>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li>
+                    <a href=""></a>Home</li>
+                <li>
+                    <a href=""></a>Tutorials</li>
+                <li>
+                    <a href=""></a>Videos</li>
+                <li>
+                    <a href=""></a>Exercises</li>
+                <li>
+                    <a href=""></a>Reference</li>
+                <li>
+                    <a href=""></a>Blogs</li>
+
+                <li>
+                    <a href=""></a>Book</li>
+                <li>
+                    <a href=""></a>Buy Course</li>
+
+                <li>
+                    <a href=""></a>Help us</li>
+
+                <li>
+                    <a href=""></a>About us</li>
+            </ul>
+        </nav>
+        <div class="login">
+            <div>SignUp</div>
+            <div>Login</div>
+            <input type="text" name="search" id="search" placeholder="Search Product">
+
+        </div>
+    </header>
+</body>
+
+</html>
