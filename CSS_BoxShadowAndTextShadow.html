@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow and Text Shadow</title>
+    <style>
+        .container {
+            display: flex;
+        }
+        
+        .card {
+            padding: 23px 12px;
+            margin: 23px 12px;
+            background-color: rgb(51, 172, 131, 0.2);
+            /* box-shadow: offset-x offset-y color; */
+            /* box-shadow: 10px 13px black; */
+            box-shadow: 10px 13px black, 10px -13px rgb(192, 47, 47);
+            /* box-shadow: offset-x offset-y blur-radius color; */
+            /* box-shadow: -10px -13px 10px black; */
+            /* box-shadow: offset-x offset-y blur-radius spread-radious color; */
+            /* box-shadow: -10px -13px 10px 5px black; */
+            /* border: 2px solid black; */
+            /* box-shadow: inset 10px 13px black; */
+        }
+        
+        .card h2 {
+            text-shadow: -1px 0px 2px red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h2>This is C++ Course</h2>
+            <p>Alten herz euch sich nach drängt freundliche neu. Steigen ihr selbst ach wieder die denen zerstoben. Die es wohl ich.Nun folgt mein naht was meinem was euch gestalten sich. Mir mein um verklungen euch welt, dunst neu mein nach.</p>
+        </div>
+        <div class="card" id="card-2">
+            <h2>This is C Course</h2>
+            <p>Alten herz euch sich nach drängt freundliche neu. Steigen ihr selbst ach wieder die denen zerstoben. Die es wohl ich.Nun folgt mein naht was meinem was euch gestalten sich. Mir mein um verklungen euch welt, dunst neu mein nach.</p>
+        </div>
+        <div class="card" id="card-3">
+            <h2>This is Java Course</h2>
+            <p>Alten herz euch sich nach drängt freundliche neu. Steigen ihr selbst ach wieder die denen zerstoben. Die es wohl ich.Nun folgt mein naht was meinem was euch gestalten sich. Mir mein um verklungen euch welt, dunst neu mein nach.</p>
+        </div>
+        <div class="card" id="card-4">
+            <h2>This is C# Course</h2>
+            <p>Alten herz euch sich nach drängt freundliche neu. Steigen ihr selbst ach wieder die denen zerstoben. Die es wohl ich.Nun folgt mein naht was meinem was euch gestalten sich. Mir mein um verklungen euch welt, dunst neu mein nach.</p>
+        </div>
+    </div>
+</body>
+
+</html>
