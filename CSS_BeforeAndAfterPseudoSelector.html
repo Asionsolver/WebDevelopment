@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Before and after pseudo selector</title>
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-color: black;
+            color: rgb(253, 253, 253);
+        }
+        
+        .navigation {
+            font-size: 20px;
+            display: flex;
+        }
+        
+        li {
+            list-style: none;
+            padding: 24px 23px;
+        }
+        
+        header {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        header::before {
+            background: url(https://source.unsplash.com/random) no-repeat center center/cover;
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.4;
+        }
+        
+        section {
+            height: 344px;
+            justify-content: center;
+            align-items: center;
+            margin: 3px 420px;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        h1 {
+            font-size: 4rem;
+        }
+        
+        p {
+            text-align: center;
+        }
+        /* section::before {
+            content: "This is a Before Pseudo Selector Content";
+        }
+        
+        section::after {
+            content: "This is a After Pseudo Selector Content";
+        } */
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">Tutorials</li>
+                <li class="item">Blogs</li>
+                <li class="item">Contact Us</li>
+                <li class="item">About</li>
+            </ul>
+        </nav>
+        <section>
+            <h1>Welcome To Codding World</h1>
+            <p>LoOf there and heart left ne. Sad monks power that taste been. Disappointed lineage it would climes eremites basked strength by, birth of adversity but of birth but known and the. Hall long maddest to longed. Visit before had harolds happy</p>
+
+        </section>
+    </header>
+
+</body>
+
+</html>
