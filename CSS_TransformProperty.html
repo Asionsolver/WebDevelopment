@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform property</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        .container {
+            height: 80vh;
+            background-color: cadetblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .box {
+            display: flex;
+            background: salmon;
+            border: 2px solid black;
+            border-radius: 10px;
+            height: 400px;
+            width: 400px;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .box:hover {
+            transition: all 2s ease-in-out;
+            /* transform: rotate(360deg); */
+            /* transform: skew(45deg); */
+            /* transform: scale(2); */
+            transform: translateX(100px);
+            transform: translatey(100px);
+            transform: translate(100px, 100px);
+        }
+    </style>
+</head>
+
+<body>
+    <h2>I learn Transform property now</h2>
+    <div class="container">
+        <div class="box">This is a Box</div>
+    </div>
+
+</body>
+
+</html>
