@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background</title>
+    <style>
+        html {
+            background-color: white;
+        }
+        
+        body {
+            /* background-color: rgb(146, 95, 95); */
+        }
+        
+        .div-element-1 {
+            /* inherit, inherits this property from its parent element. */
+            background-color: inherit;
+        }
+        
+        .div-element-2 {
+            /* initial, sets this property to its default value. */
+            background-color: initial;
+        }
+        
+        .div-element-3 {
+            /* transparent, specifies that the background color should be transparent. This is default. */
+            background-color: transparent;
+        }
+        
+        .div-element-4 {
+            /* transparent, specifies that the background color should be transparent. This is default. */
+            /* background-color: blue; */
+            background: linear-gradient(to left, red, blue);
+        }
+        
+        .div-element-5 {
+            /* background: linear-gradient(to left top, red, yellow 20%); */
+            background: linear-gradient(to left bottom, red, yellow 50%);
+            /* background: linear-gradient(to left right, red, yellow 10%);not work */
+            /* background: linear-gradient(to left top, red 50%, yellow 10%); */
+        }
+        
+        .div-element-6 {
+            color: white;
+            background: linear-gradient(to left, rgb(185, 171, 171), rgb(165, 145, 108), rgb(145, 145, 58), rgb(87, 148, 87), rgb(70, 70, 148), rgb(117, 84, 139), rgb(134, 63, 134))
+        }
+        
+        .div-element-7 {
+            color: white;
+            /* gradient-shap--> ellipse(default) */
+            background: radial-gradient(red, blue);
+        }
+        
+        .div-element-8 {
+            color: white;
+            /* gradient-shap--> ellipse(default) */
+            /* 1.circle Shape of gradient-->Values are circle or ellipse, default is ellipse. */
+            /* farthest-corner-->keywords describing how big the ending shape must be. Values are closest-side, farthest-side, closest-corner, farthest-corner
+            */
+            /* background: radial-gradient(ellipse closest-side at top left, rgb(250, 247, 247), rgb(23, 23, 170)); */
+            /* background: radial-gradient(circle closest-corner at top left, rgb(194, 4, 4), rgb(23, 23, 170)); */
+            /* background: radial-gradient(circle farthest-side at top left, rgb(194, 4, 4), rgb(23, 23, 170)); */
+            /* background: radial-gradient(circle farthest-corner at top left, red, blue); */
+        }
+        
+        .div-element-9 {
+            color: rgb(2, 2, 2);
+            width: 500px;
+            padding: 100px;
+            border: 100px solid red;
+            /* margin: 100px; */
+            box-sizing: border-box;
+            height: 100px;
+            /* background: repeating-radial-gradient(red, red 10%, white 10%, white 20%); */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <h1>CSS Background</h1>
+        <div class="div-element-1 ">
+            <p class="p-element ">This is a another simple paragraph demonatrate css selector.</p>
+        <span>This is span.</span>
+    </div>
+    <div class="div-element-2 ">
+        <p class="p-element ">This is a another simple paragraph demonatrate css selector.</p>
+        <span>This is span.</span>
+    </div>
+    <div class="div-element-3 ">
+        <p class="p-element ">This is a another simple paragraph demonatrate css selector.</p>
+        <span>This is span.</span>
+    </div>
+    <div class="div-element-4 ">
+        <p class="p-element ">This is a another simple paragraph demonatrate css selector.</p>
+        <span>This is span.</span>
+    </div>
+    <div class="div-element-5 ">
+        <p class="p-element ">This is a another simple paragraph demonatrate css selector.</p>
+        <span>This is span.</span>
+    </div>
+    <div class="div-element-6 ">
+        <p class="p-element ">This is a another simple paragraph demonatrate css selector.</p>
+        <span>This is span.</span>
+    </div>
+    <div class="div-element-7 ">
+        <p class="p-element ">This is a another simple paragraph demonatrate css selector.</p>
+        <span>This is span.</span>
+    </div> -->
+    <!-- <div class="div-element-8 ">
+        <p class="p-element ">This is a another simple paragraph demonatrate css selector.</p>
+        <span>This is span.</span>
+    </div> -->
+    <div class="div-element-9 ">
+        <p class="p-element ">This is a another simple paragraph demonatrate css selector.Aliquyam amet erat justo elitr diam kasd tempor, ipsum eos ea elitr eirmod diam sed, ipsum amet lorem accusam et..</p>
+
+    </div>
+</body>
+
+</html>
