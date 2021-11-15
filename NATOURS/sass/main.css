@@ -4,7 +4,6 @@ Light Green:#7ed56f
 Medium Green:#55c57a
 Dark Green: #28b485
 
-
 */
 *,
 *::after,
@@ -15,6 +14,10 @@ Dark Green: #28b485
           box-sizing: border-box;
 }
 
+html {
+  font-size: 10px;
+}
+
 body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
@@ -22,10 +25,6 @@ body {
   line-height: 1.7;
   color: #777;
   padding: 30px;
-}
-
-html {
-  font-size: 10px;
 }
 
 .header {
@@ -80,7 +79,7 @@ html {
   -webkit-animation-name: moveInLeft;
           animation-name: moveInLeft;
   /* animation-delay: 0.8s;
-    animation-iteration-count: 3; */
+        animation-iteration-count: 3; */
 }
 
 .heading-primary--sub {
@@ -90,6 +89,68 @@ html {
   letter-spacing: 1.75rem;
   -webkit-animation: moveInRight 1s ease-out;
           animation: moveInRight 1s ease-out;
+}
+
+.btn:link, .btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  border-radius: 10rem;
+  display: inline-block;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  font-size: 1.6rem;
+  position: relative;
+}
+
+.btn:hover {
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+  -webkit-box-shadow: 0 1rem 2rem, rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1rem 2rem, rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover::after {
+  -webkit-transform: scaleX(1.4) scaleY(1.6);
+          transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
+.btn:active {
+  -webkit-transform: translateY(-1px);
+          transform: translateY(-1px);
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.btn--white {
+  background-color: #fff;
+  color: #777;
+}
+
+.btn--white::after {
+  background-color: #fff;
+}
+
+.btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 10rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.btn--animated {
+  -webkit-animation: moveInBottom .5s ease-out .75s;
+          animation: moveInBottom .5s ease-out .75s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
 }
 
 @-webkit-keyframes moveInLeft {
@@ -133,8 +194,8 @@ html {
             transform: translate(10rem);
   }
   80% {
-    -webkit-transform: translateX(-2rem);
-            transform: translateX(-2rem);
+    -webkit-transform: translateX(-1rem);
+            transform: translateX(-1rem);
   }
   100% {
     opacity: 1;
@@ -150,8 +211,8 @@ html {
             transform: translate(10rem);
   }
   80% {
-    -webkit-transform: translateX(-2rem);
-            transform: translateX(-2rem);
+    -webkit-transform: translateX(-1rem);
+            transform: translateX(-1rem);
   }
   100% {
     opacity: 1;
@@ -184,68 +245,5 @@ html {
     -webkit-transform: translate(0);
             transform: translate(0);
   }
-}
-
-.btn:link,
-.btn:visited {
-  text-transform: uppercase;
-  text-decoration: none;
-  padding: 1.5rem 4rem;
-  border-radius: 4rem;
-  display: inline-block;
-  -webkit-transition: all .2s;
-  transition: all .2s;
-  position: relative;
-  font-size: 1.6rem;
-}
-
-.btn:hover {
-  -webkit-transform: translateY(-0.3rem);
-          transform: translateY(-0.3rem);
-  -webkit-box-shadow: 0 1rem 2rem, rgba(0, 0, 0, 0.2);
-          box-shadow: 0 1rem 2rem, rgba(0, 0, 0, 0.2);
-}
-
-.btn:active {
-  -webkit-transform: translateY(-0.1rem);
-          transform: translateY(-0.1rem);
-  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
-          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
-}
-
-.btn::after {
-  content: "";
-  display: inline-block;
-  height: 100%;
-  width: 100%;
-  border-radius: 10rem;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  -webkit-transition: all .4s;
-  transition: all .4s;
-}
-
-.btn:hover::after {
-  -webkit-transform: scaleX(1.4) scaleY(1.6);
-          transform: scaleX(1.4) scaleY(1.6);
-  opacity: 0;
-}
-
-.btn--white {
-  background-color: #fff;
-  color: #777;
-}
-
-.btn--white::after {
-  background-color: #fff;
-}
-
-.btn--animated {
-  -webkit-animation: moveInBottom .5s ease-out .75s;
-          animation: moveInBottom .5s ease-out .75s;
-  -webkit-animation-fill-mode: backwards;
-          animation-fill-mode: backwards;
 }
 /*# sourceMappingURL=main.css.map */
