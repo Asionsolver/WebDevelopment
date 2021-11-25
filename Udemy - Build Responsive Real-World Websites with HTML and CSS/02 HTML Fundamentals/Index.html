@@ -11,15 +11,16 @@
 
 <body>
     <div class="container">
-        <header class="main-header">
+        <header class="main-header clearfix" cl>
+            <h1> 📘 The Code Magazine</h1>
             <nav>
-                <h1> 📘 The Code Magazine</h1>
                 <a href="blog.html">Blogs</a>
                 <a href="#">Challenges</a>
                 <a href="#">Flexbox</a>
                 <a href="#">CSS</a>
                 <a href="#">Grid</a>
             </nav>
+            <!-- !<div class="clear"></div> -->
         </header>
 
         <article>
@@ -27,10 +28,11 @@
             <header class="post-header">
                 <h2>The Basic Language of the Web: HTML</h2>
 
-                <img src="../02 HTML Fundamentals/img/laura-jones.jpg" alt="Laura Jones" width="50" height="50">
-                <p id="author">Posted by <strong>Laura Jones </strong> on Monday, June 21st 2021</p>
+                <img src="../02 HTML Fundamentals/img/laura-jones.jpg" alt="Laura Jones" width="50" height="50" class="author-img">
+                <p id="author" class="author">Posted by <strong>Laura Jones </strong> on Monday, June 21st 2021</p>
 
                 <img src="../02 HTML Fundamentals/img/code-img.jpg" alt="HTML code on a screen" class="post-img">
+                <!-- !<button>❤️Like</button> -->
             </header>
 
             <p>All modern website and web application are built three <em>fundamental</em> technologies: HTML, CSS and Javascript. These are the languages of the web.</p>
@@ -55,7 +57,7 @@
 
             <p>You can learn more at <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">MDN Web Docs</a>. </p>
 
-            <h2>Why should you learn HTML?</h2>
+            <h3>Why should you learn HTML?</h3>
             <p>There are countless reasons for learning the fundamental language of the web. Here are 5 of them:</p>
 
             <ul class="related">
@@ -74,22 +76,22 @@
             <ul class="related">
                 <li> <img src="../02 HTML Fundamentals/img/how-learn.jpg" alt="how-learn" width="60" height="60">
                     <a href="#">How to Learn Web Development</a>
+                    <p class="related-author">By Jonas Schmedtman </p>
                 </li>
 
-                <p class="related-author">By Jonas Schmedtman </p>
 
                 <li> <img src="../02 HTML Fundamentals/img/power.jpg" alt="JavaScript" width="60" height="60">
                     <a href="#">The Unknown Power of CSS</a>
+                    <p class="related-author">By Jim Dillon </p>
                 </li>
 
-                <p class="related-author">By Jim Dillon </p>
 
                 <li>
                     <img src="../02 HTML Fundamentals/img/code-1.jpg" alt=" Code-image " width="60 " height="60 ">
                     <a href="# ">Why JavaScript is Awesome</a>
+                    <p class="related-author">By Ashis Kumar Pal </p>
                 </li>
 
-                <p class="related-author">By Ashis Kumar Pal </p>
 
             </ul>
         </aside>
@@ -98,6 +100,7 @@
             <p>Copyright &copy; 2021 by The Code Magazine.</p>
         </footer>
     </div>
+
 </body>
 
 </html>
