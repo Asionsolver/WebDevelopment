@@ -42,7 +42,8 @@ body {
 }
 
 .open .hidden-box {
-    display: block;
+    display: flex;
+    flex-direction: column;
 }
 
 .number {
