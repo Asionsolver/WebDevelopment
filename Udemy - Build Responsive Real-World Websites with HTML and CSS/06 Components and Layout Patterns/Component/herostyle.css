@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* COLOUR CODE */
+
+
+/* 
+Main-colour:#087f5b;
+Table-colour: #e6fcf5;
+Table-colour: #c3fae8;
+Gray-colour: #343a40; 
+*/
+
+
+/* ! GENERAL STYLE */
+
+body {
+    font-family: 'Inter', sans-serif;
+}
