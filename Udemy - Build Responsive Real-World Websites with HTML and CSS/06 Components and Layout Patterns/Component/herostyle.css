@@ -1,8 +1,8 @@
-/* * {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-} */
+}
 
 
 /* COLOUR CODE */
@@ -23,16 +23,51 @@ html {
     color: #444;
 }
 
+.container {
+    margin: 0 auto;
+    width: 1200px;
+    /* background-color: red; */
+}
+
+header {
+    /* background-color: aqua; */
+    height: 100vh;
+    position: relative;
+    background-image: linear-gradient(rgba(34, 34, 34, 0.6), rgba(34, 34, 34, 0.6)), url(cover-photo.jpg);
+    background-size: cover;
+    color: #fff;
+    padding-top: 32px;
+}
+
+.header-container {
+    width: 1200px;
+    position: absolute;
+    /* ! In relation to  parent size */
+    left: 50%;
+    top: 50%;
+    /* ! In relation to element size */
+    transform: translate(-50%, -50%);
+    /* background-color: rebeccapurple; */
+}
+
+.header-container-inner {
+    /* background-color: red; */
+    width: 50%;
+}
+
 nav {
     font-size: 20px;
     font-weight: 700;
     display: flex;
     justify-content: space-between;
+    /* background-color: #e67e22 */
 }
 
 h1 {
+    line-height: 1.05;
     font-size: 52px;
     margin-bottom: 32px;
+    letter-spacing: -1.4px;
 }
 
 p {
@@ -53,4 +88,12 @@ p {
     border-radius: 9px;
 }
 
-h2
+h2 {
+    font-size: 44px;
+    margin-bottom: 48px;
+}
+
+section {
+    background-color: #f7f7f7;
+    padding: 96px 0;
+}
