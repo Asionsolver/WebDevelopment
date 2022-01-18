@@ -1,12 +1,13 @@
-rect.draw()
+function addition(a, b, func) {
+//     var c = a + b
+//     var d = a - b
 
-// rect.height = 300
-// rect.width = 200
-
-// rect.draw()
-
-// function myFunc() {
-//     console.log(this) //this is called window object thats means this keyword assosiate window object
+//     return function() {
+//         var m = func(a, b)
+//         return m - c - d
+//     }
 // }
-// myFunc()
-// new myFunc() //this is called empty object because used new keyword. That means  myFunc function assosiate blank or empty object
+
+// var returnFunc = addition(9, 4, add)
+// console.log(returnFunc)
+// console.log(returnFunc())

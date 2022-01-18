@@ -7,7 +7,7 @@ function add(a, b) {
 
 // 1. A function can be store in a variable 
 
-var sum = add
+var sum = add // that function store in variable
 console.log(sum(4, 6))
 console.log(typeof sum)
 

@@ -1,12 +1,12 @@
-function sample(a, b, cd) {
+function sample(a, b, callBack) {
     var c = a + b //c = 13
     var d = a - b //d = 3
 
-    var result = cd(c, d)
+    var result = callBack(c, d)
     return result
 }
 
-function sum(a, b) { //sum funcution is used call back function
+function sum(a, b) { //sum function is used call back function 
     return a + b //a + b = 13 + 3 =16
 
 }
