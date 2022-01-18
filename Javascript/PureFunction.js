@@ -1,15 +1,15 @@
 /* 
 
 What is Functional Programming ?
-==> Functional programming is a programming paradigm - a style of building the structure and elements of computer programs that threats computation as the evalution of mathematicalfunction and avoids changing - state and mutable Data. 
+==> Functional programming is a programming paradigm - a style of building the structure and elements of computer programs that threats computation as the evalution of mathematical function and avoids changing - state and mutable Data. 
 
 Three main terms
-        1.Pure Funtion
-        2.First class Funtion
-        3.Higher Order Funtion
+        1.Pure Function
+        2.First class Function
+        3.Higher Order Function
 
 
-        *********** Funciton acts like as value ***********
+        *********** Function acts like as value ***********
 
 */
 
@@ -32,7 +32,7 @@ var n = 10
 function change() {
     n = 100
 }
-change() //not a pure function because change n variable value
+change() //not a pure function because it cause observable side effects. That means change n variable value
 console.log(n)
 
 var point = { a: 123, b: 43 }
@@ -43,5 +43,5 @@ function pinpoint(point) {
     console.log(point)
 }
 
-pinpoint(point) //not a pure function because change point object variable value
+pinpoint(point) //not a pure function because It does not return the same result if given the same arguments. That means change point object variable value
 console.log(point)

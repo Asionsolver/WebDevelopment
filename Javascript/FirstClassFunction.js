@@ -33,4 +33,4 @@ setTimeout(function() {
 
 // 5. We can pass function as an arguments 
 
-// 6. We can return function from another functon
+// 6. We can return function from another function
