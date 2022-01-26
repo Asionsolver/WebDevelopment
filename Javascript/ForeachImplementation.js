@@ -1,5 +1,13 @@
 var arr = [1, 5, 3, 6, 8]
 
+sum = 0
+arr.forEach(function(value, index,arr){
+    // console.log(value, index,arr)
+    sum += value
+})
+
+console.log(sum)
+
 // 1st step
 
 // function forEach(arr) {
@@ -23,7 +31,7 @@ var arr = [1, 5, 3, 6, 8]
 //     }
 // }
 
-var sum = 0;
+// var sum = 0;
 
 // forEach(arr, function(value, index, arr) {
 //     console.log(value, index, arr)
@@ -31,11 +39,3 @@ var sum = 0;
 // })
 // console.log(sum)
 
-
-
-arr.forEach(function(value, index, arr) {
-    console.log(value, index, arr)
-    sum += value
-})
-
-console.log(sum)

@@ -1,3 +1,8 @@
+// A callback is a function passed as an argument to another function.
+
+
+
+
 function sample(a, b, callBack) {
     var c = a + b //c = 13
     var d = a - b //d = 3
