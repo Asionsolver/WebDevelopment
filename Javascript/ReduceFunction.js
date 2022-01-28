@@ -29,13 +29,13 @@ var sum = myReduce(arr, function(prev, current) {
     return prev + current
 }, 0)
 
-console.log('Orginal array is ' + '[' + arr + ']')
+console.log('Original array is ' + '[' + arr + ']')
 console.log('The result of sum is ' + sum)
 console.log(" ")
 var maximum = myReduce(arr, function(prev, current) {
     return Math.max(prev, current)
-}, 0)
-console.log('Orginal array is ' + '[' + arr + ']')
+}, arr[0])
+console.log('Original array is ' + '[' + arr + ']')
 console.log('The result of maximum number is ' + maximum)
 console.log(" ")
 
@@ -44,6 +44,6 @@ var minimum = myReduce(arr, function(prev, current) {
     return Math.min(prev, current)
 }, arr[0])
 
-console.log('Orginal array is ' + '[' + arr + ']')
+console.log('Original array is ' + '[' + arr + ']')
 console.log('The result of minimum number is ' + minimum)
 console.log(" ")
