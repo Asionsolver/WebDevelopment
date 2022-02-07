@@ -10,7 +10,7 @@ var Rectangle = function(width, height) {
         this.printProperties()
     }
     this.printProperties = function() {
-        console.log('This is print Propeties')
+        console.log('This is print Properties')
         console.log('My width is ' + this.width + ' cm')
         console.log('My height is ' + this.height + ' cm')
     }
