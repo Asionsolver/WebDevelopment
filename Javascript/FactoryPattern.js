@@ -7,11 +7,10 @@ var createRect = function(width, height) {
             console.log('I am rectangle')
             console.log('My width is ' + this.width + ' cm')
             console.log('My height is ' + this.height + ' cm')
-            console.log(this)
             this.printProperties()
         },
         printProperties: function() {
-            console.log('This is print Propeties')
+            console.log('This is print Properties')
             console.log('My width is ' + this.width + ' cm')
             console.log('My height is ' + this.height + ' cm')
         }
