@@ -1,13 +1,6 @@
-function addition(a, b, func) {
-//     var c = a + b
-//     var d = a - b
-
-//     return function() {
-//         var m = func(a, b)
-//         return m - c - d
-//     }
+function myFun(){
+//     console.log(this)
+//     console.log(this.a + this.b)
 // }
 
-// var returnFunc = addition(9, 4, add)
-// console.log(returnFunc)
-// console.log(returnFunc())
+// myFun.call({a:45, b:45})
