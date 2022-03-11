@@ -25,7 +25,7 @@
 // let listItemOne =document.querySelectorAll('[name^="list-item-one"]')
 // console.log(listItemOne)
 
-let list = document.getElementById('list')
+//let list = document.getElementById('list')
 
 // let parent = list.parentElement  // show parent element
 // console.log(parent)
@@ -45,8 +45,33 @@ let list = document.getElementById('list')
 
 // console.log(li.nextElementSibling)
 
-console.log(list.firstChild) //return first child node that means text node
+//console.log(list.firstChild) //return first child node that means text node
 
-console.log(list.firstElementChild) // return first element child node that means first html element
-console.log(list.lastElementChild) // return first element child node that means first html element
+//console.log(list.firstElementChild) // return first element child node that means first html element
+//console.log(list.lastElementChild) // return first element child node that means first html element
+
+let listItem = document.getElementsByTagName('li')
+// console.log(listItem)
+
+
+// listItem.forEach is not a function
+// listItem.forEach((li,index) => {
+//     let text = li.innerHTML
+//     li.innerHtml = `(${index+1}) ${text}`
+    
+// })
+
+// 1st option
+
+// let listItems = Array.from(listItem)
+// console.log(listItems)
+
+let listItems = Array.prototype.slice.apply('li')
+// let listItems = [...listItem]
+
+listItems.forEach((li,index) => {
+    let text = li.innerHTML
+    li.innerHtml = `(${index+1}) ${text}`
+    
+})
 
