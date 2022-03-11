@@ -26,20 +26,21 @@ var Rectangle = function(width, height){
     //how to access private properties outside
 
     //1st solution 
-    // this.getPosition = function(){  // Accessing private properties through method declaration
-    //     return position 
-    // }
+
+    this.getPosition = function(){  // Accessing private properties through method declaration
+        return position 
+    }
 
     //2nd solution
 
-    Object.defineProperty(this, 'position', {   //It is built in method of Object
-        get:function(){
-            return position
-        },
-        set:function(value){
-            position = value
-        }
-    })
+    // Object.defineProperty(this, 'position', {   //It is built in method of Object
+    //     get:function(){
+    //         return position
+    //     },
+    //     set:function(value){
+    //         position = value
+    //     }
+    // })
 
     this.draw = function(){
         console.log('I am a rectangle')
@@ -51,9 +52,10 @@ var Rectangle = function(width, height){
 
 var rect =  new Rectangle(45,89)
 rect.draw()
-rect.position={
-    x:47,
-    y:48
-}
-// console.log(rect.getPosition()) 
-console.log(rect.position) 
+
+console.log(rect.getPosition()) 
+// rect.position={
+//     x:47,
+//     y:48
+// }
+// console.log(rect.position) 
