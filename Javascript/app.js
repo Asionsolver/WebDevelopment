@@ -25,6 +25,16 @@
 // let listItemOne =document.querySelectorAll('[name^="list-item-one"]') //select by name
 // console.log(listItemOne)
 
+let li1 = document.getElementsByTagName('li')  //use element node list
+console.log(li1.constructor.name)
+
+let li2 = document.querySelectorAll('li')  //use node list [Element,Comment,Text]
+console.log(li2.constructor.name)
+
+let ul =document.querySelector('ul')
+console.log(ul.children)
+console.log(ul.childNodes)
+
 //let list = document.getElementById('list')
 
 // let parent = list.parentElement  // show parent element
