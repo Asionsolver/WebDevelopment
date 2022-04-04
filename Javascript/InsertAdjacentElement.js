@@ -23,9 +23,9 @@ let div = createElement('div');
 
 append(div, [paragraph, paragraph2]);
 // console.log(div);
+// insertAdjacentElement() method inserts a new element adjacent to an existing element in the DOM tree.
 
-// list.insertAdjacentElement('beforebegin', div); // insertAdjacentElement() method inserts a new element adjacent to an existing element in the DOM tree.
-
+// list.insertAdjacentElement('beforebegin', div); 
 // list.insertAdjacentElement('afterbegin', div); 
 // list.insertAdjacentElement('beforeend', div); 
 list.insertAdjacentElement('afterend', div);
