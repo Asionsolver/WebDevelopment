@@ -25,69 +25,54 @@
 // let listItemOne =document.querySelectorAll('[name^="list-item-one"]') //select by name
 // console.log(listItemOne)
 
-// let li1 = document.getElementsByTagName('li')  //use element node list
+
+// ! Get Elements Method vs Query Selector in Javascript
+
+
+// let li1 = document.getElementsByTagName('li')  // ? use element node list
+// console.log(li1)
 // console.log(li1.constructor.name)
 
-// let li2 = document.querySelectorAll('li')  //use node list [Element,Comment,Text]
+// let li2 = document.querySelectorAll('li')  // ? use node list [Element,Comment,Text]
+// console.log(li2)
 // console.log(li2.constructor.name)
 
 // let ul =document.querySelector('ul')
 // console.log(ul.children)
-// console.log(ul.childNodes) //returns all child nodes
+// console.log(ul.childNodes) // ? returns all child nodes
 
-//let list = document.getElementById('list')
+// ! Traversing the DOM Elements
 
-// let parent = list.parentElement  // show parent element
+let list = document.getElementById('list')
+// console.log(list)
+
+// let parent = list.parentElement  // ? show parent element
 // console.log(parent)
 
 // let children = list.children
 // console.log(children)
 
-// let previousChildren = list.previousSibling //return node element
-// console.log(previousChildren)
-
-// let previousChildren2 = list.previousElementSibling //return html element
-// console.log(previousChildren2)
-
-// console.log(list.nextElementSibling)
+// let previousSibling = list.previousSibling // ? return node element.Not use
+// console.log(previousSibling)
+// let previousElementSiblings = list.previousElementSibling // ? return node element.Use
+// console.log(previousElementSiblings)
+// let nextElementSiblings = list.nextElementSibling // ? return node element.Use
+// console.log(nextElementSiblings)
 
 // let li = document.querySelector('li')
 
 // console.log(li.nextElementSibling)
 
-//console.log(list.firstChild) //return first child node that means text node
+// console.log(list.firstChild) // ? return first child node that means text node
 
-//console.log(list.firstElementChild) // return first element child node that means first html element
-//console.log(list.lastElementChild) // return first element child node that means first html element
-
-
+// console.log(list.firstElementChild) //  ? return first element child node that means first html element
+// console.log(list.lastElementChild) // ?  return first element child node that means first html element
 
 
-// let list = document.getElementById('list')
-// console.log(list)
+// ! How to Loop Throw HTML Collection in Javascript
 
-// let parent = list.parentElement
-// // console.log(parent)
-
-// let children = list.children
-// // console.log(children)
-
-// let previousSibling = list.previousSibling  //return node element
-// // console.log(previousSibling)
-// let nextSibling = list.nextElementSibling  //return node element 
-// // console.log(nextSibling)
-
-// let previousSibling2 = list.previousElementSibling  //return html element
-// console.log(previousSibling2)
-
-// let nextSibling2 = list.nextElementSibling  //return html element
-// console.log(nextSibling2)
-
-// console.log(list.firstElementChild) // return first element child node that means first html element
-// console.log(list.lastElementChild) // return first element child node that means first html element
-
-let listItem = document.getElementsByTagName('li'); //returns node list
-// console.log(listItem)
+let listItem = document.getElementsByTagName('li'); // ? returns node list
+console.log(listItem)
 
 
 // listItem.forEach is not a function
@@ -119,13 +104,13 @@ let listItem = document.getElementsByTagName('li'); //returns node list
 // })
 
 // 3rd option
-let listItems = [...listItem] //spread operator
+// let listItems = [...listItem] //spread operator
 
-listItems.forEach((li,index) => {
-    let text = li.innerHTML  //returns text node
-    li.innerHtml = `(${index+1}) ${text}` //convert array to string
+// listItems.forEach((li,index) => {
+    // let text = li.innerHTML  //returns text node
+    // li.innerHtml = `(${index+1}) ${text}` //convert array to string
     
-})
+// })
 
 // 4th option
 
