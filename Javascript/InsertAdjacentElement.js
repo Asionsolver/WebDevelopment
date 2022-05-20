@@ -14,9 +14,9 @@ list.appendChild(li); // appendChild() method adds a child node to the end of th
 
 
 
-let paragraph = createElement('p', 'lead', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque atque praesentium anim icorrupti, modi in laborum delectus, vel, eum fugit commodi labore doloribus perspiciatis nostrum error quidem eaque facilis doloremque explicabo? Harum.');
+let paragraph = createElement('p', 'lead', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quos.');
 
-let paragraph2 = createElement('p', 'lead', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque atque praesentium anim icorrupti, modi in laborum delectus, vel, eum fugit commodi labore doloribus perspiciatis nostrum error quidem eaque facilis doloremque explicabo? Harum.');
+let paragraph2 = createElement('p', 'lead', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. ');
 
 
 let div = createElement('div');
