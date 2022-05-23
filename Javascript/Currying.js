@@ -14,4 +14,4 @@ function currying(a) {
 
 var result = currying(5)(7)(8)
 
-console.log(result)
+console.log(result)  //result = 20
