@@ -1,15 +1,9 @@
+// ! using object literal
+
 // var obj = {}
 // obj.x = 10
 // console.log(typeof obj)
 // console.log(obj)
-
-// var obj1 = Object()
-// obj1.static = 85
-// console.log(obj1)
-
-// var obj3 = new Object()
-// obj3.programming = 75
-// console.log(obj3)
 
 var subjectMarks = {
     math: 92,
@@ -40,3 +34,13 @@ if (obj1.a === obj2.a && obj1.b === obj2.b) {
 } else {
     console.log(false)
 }
+
+// ! using object constructor
+
+// var obj1 = Object()
+// obj1.static = 85
+// console.log(obj1)
+
+// var obj3 = new Object()
+// obj3.programming = 75
+// console.log(obj3)
