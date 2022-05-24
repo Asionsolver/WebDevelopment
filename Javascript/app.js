@@ -146,11 +146,11 @@
 // let list = document.getElementById('list')
 // list.appendChild(li)
 
-let li = createElement('li','list-group-item','Five')
+// let li = createElement('li','list-group-item','Five')
 // li.setAttribute('title','I am fifth list item')
 
-let list = document.getElementById('list') 
-list.appendChild(li)
+// let list = document.getElementById('list') 
+// list.appendChild(li)
 
 // let paragraph = createElement('p', 'lead', 'This is a paragraph');
 
@@ -168,34 +168,35 @@ list.appendChild(li)
 // let container = document.getElementById('containers');
 // container.appendChild(div);
 
-function createElement(tagName, className, innerHTML) {
-    let tag = document.createElement(tagName);
-    tag.className = className || '';
-    tag.innerHTML = innerHTML || '';
-    return tag;
-}
+// function createElement(tagName, className, innerHTML) {
+//     let tag = document.createElement(tagName);
+//     tag.className = className || '';
+//     tag.innerHTML = innerHTML || '';
+//     return tag;
+// }
 
-function append(parent, children) {
-    children.forEach(child => parent.appendChild(child));
-}
+// function append(parent, children) {
+//     children.forEach(child => parent.appendChild(child));
+// }
 // }
 //  ! Update & Remove any DOM Elements in Javascript 
+// let list = document.getElementById('list')
 
-let firstChild = list.firstElementChild;
+// let firstChild = list.firstElementChild;
 // console.log(firstChild)
 
-// Update Dom Element
+// ? Update Dom Element
 
-setTimeout(() => {
-    firstChild.innerHTML =firstChild.innerHTML + ' Modified'
-    // firstChild.classList.add('bg-success')
-    firstChild.style.color = 'red'
-    firstChild.style.backgroundColor = '#191919'
-} , 2000)
+// setTimeout(() => {
+//     firstChild.innerHTML =firstChild.innerHTML + ' (Modified)'
+//     // firstChild.classList.add('bg-success')
+//     firstChild.style.color = 'red'
+//     firstChild.style.backgroundColor = '#191919'
+// } , 2000)
 
-// Remove Dom Element
+// ? Remove Dom Element
 
-setTimeout(() => {
-    list.lastChild.remove()
-    list.thirdChild.remove()
-}, 4000)
+// setTimeout(() => {
+//     list.lastChild.remove()
+//     // list.thirdChild.remove()
+// }, 4000)
