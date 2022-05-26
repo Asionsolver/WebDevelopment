@@ -133,65 +133,22 @@
 //     console.log(listItem[i]);
 // }
 
-// ! Create DOM Elements in Javascript
-// function myFunction(){
-// let li = document.createElement('li')
-// li.className = 'list-group-item'
-// console.log(li)
-// console.dir(li)
-
-// li.setAttribute('title','I am fifth list item')
-// li.innerHTML = 'Five'
-
-// let list = document.getElementById('list')
-// list.appendChild(li)
-
-// let li = createElement('li','list-group-item','Five')
-// li.setAttribute('title','I am fifth list item')
-
-// let list = document.getElementById('list') 
-// list.appendChild(li)
-
-// let paragraph = createElement('p', 'lead', 'This is a paragraph');
-
-// let paragraph2 = createElement('p', 'lead', 'This is a paragraph 2');
-
-// let div = createElement('div');
-// append(div,[paragraph,paragraph2]);
-// console.log(div);
 
 
-// document.getElementsByClassName('container')[0].appendChild(div);
-
-// or
-
-// let container = document.getElementById('containers');
-// container.appendChild(div);
-
-// function createElement(tagName, className, innerHTML) {
-//     let tag = document.createElement(tagName);
-//     tag.className = className || '';
-//     tag.innerHTML = innerHTML || '';
-//     return tag;
-// }
-
-// function append(parent, children) {
-//     children.forEach(child => parent.appendChild(child));
-// }
-// }
 //  ! Update & Remove any DOM Elements in Javascript 
 // let list = document.getElementById('list')
 
 // let firstChild = list.firstElementChild;
 // console.log(firstChild)
 
+
 // ? Update Dom Element
 
 // setTimeout(() => {
-//     firstChild.innerHTML =firstChild.innerHTML + ' (Modified)'
+//     firstChild.innerHTML = firstChild.innerHTML + ' (Modified)'
 //     // firstChild.classList.add('bg-success')
-//     firstChild.style.color = 'red'
 //     firstChild.style.backgroundColor = '#191919'
+//     firstChild.style.color = 'red'
 // } , 2000)
 
 // ? Remove Dom Element
@@ -199,4 +156,6 @@
 // setTimeout(() => {
 //     list.lastChild.remove()
 //     // list.thirdChild.remove()
-// }, 4000)
+// }, 1000)
+
+// ! How to Clone Node Include It's Child Elements in Javascript
