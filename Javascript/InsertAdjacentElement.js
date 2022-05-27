@@ -1,39 +1,28 @@
-// let li = document.createElement('li');
-// li.className = 'list-group-item';
-// li.innerHTML = 'Four';
+//  appendChild() method adds a child node to the end of the list of children of a specified parent node. Returns the appended node. Recommended.
 
+let createDiv = createElement('div', 'container', 'Hello Programmer. You will create new DOM elements');
 
-// list.append(li); // append() method adds a node as the last child of a node. Not Recommended.
+let container = document.getElementById('containers');
+container.appendChild(createDiv);
 
-
-let li = createElement('li', 'list-group-item', 'Four');
-li.setAttribute('title','I am fourth item');
+let createLi1 = createElement('li', 'list-group-item', 'Six');
+let createLi2 = createElement('li', 'list-group-item', 'Seven');
 let list = document.getElementById('list');
-list.appendChild(li); // appendChild() method adds a child node to the end of the list of children of a specified parent node. Returns the appended node. Recommended.
+appends(list, [createLi1, createLi2]);
 
+let createStrong = createElement('strong', 'strong', 'Hello Programmer. You will create strong tag');
 
-
-
-let paragraph = createElement('p', 'lead', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quos.');
-
-let paragraph2 = createElement('p', 'lead', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. ');
-
-
-let div = createElement('div');
-
-append(div, [paragraph, paragraph2]);
-// console.log(div);
+let getStrong = document.getElementById('containers');
+container.appendChild(createStrong);
 // insertAdjacentElement() method inserts a new element adjacent to an existing element in the DOM tree.
 
-// list.insertAdjacentElement('beforebegin', div); 
-// list.insertAdjacentElement('afterbegin', div); 
-// list.insertAdjacentElement('beforeend', div); 
-list.insertAdjacentElement('afterend', div);
+list.insertAdjacentElement('beforebegin', createStrong); 
+containers.insertAdjacentElement('afterbegin', createLi1); 
+containers.insertAdjacentElement('beforeend', createLi2); 
+// list.insertAdjacentElement('afterend', div);
 
-// document.getElementsByClassName('container')[0].appendChild(div);
 
-// let container = document.getElementById('container-body');
-// container.appendChild(div);
+
 
 function createElement(tagName, className, innerHTML) {
     let tag = document.createElement(tagName);
@@ -42,7 +31,7 @@ function createElement(tagName, className, innerHTML) {
     return tag;
 }
 
-function append(parent, children) {
+function appends(parent, children) {
     children.forEach(child => parent.appendChild(child));
 }
 

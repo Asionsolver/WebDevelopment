@@ -27,16 +27,20 @@
 let li = createElement('li','list-group-item','Six')
 // li.setAttribute('title','I am fifth list item')
 let list = document.getElementById('list')
-list.appendChild(li)
+list.append(li)
 
 
-let paragraph = createElement('p', 'lead', 'This is a paragraph');
-let div = createElement('div');
-
-list.append(div, paragraph);
-
+// let paragraph = createElement('p', 'lead', 'This is a paragraph');
+// let div = createElement('div');
+// list.append(div, paragraph);
 
 
+// document.getElementsByClassName('container')[0].appendChild(div);
+
+// or
+
+// let container = document.getElementById('containers');
+// container.appendChild(div);
 
 function createElement(tagName, className, innerHTML) {
     let tag = document.createElement(tagName);
