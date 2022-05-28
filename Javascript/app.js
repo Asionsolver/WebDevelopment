@@ -158,4 +158,3 @@
 //     // list.thirdChild.remove()
 // }, 1000)
 
-// ! How to Clone Node Include It's Child Elements in Javascript
