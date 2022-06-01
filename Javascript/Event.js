@@ -29,4 +29,4 @@ box.addEventListener("mousemove", function (e) {
         
         // alert("You win");
     }
-})
+}) 
