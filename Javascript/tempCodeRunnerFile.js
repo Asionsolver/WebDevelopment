@@ -1,10 +1,7 @@
-var person = {
-//     name: "John",
-//     age: 30,
-//     city: "New York"
-// };
+var foo = 4;
 
-// for (var key in person) {
-//     console.log(key + ": " + person[key]);
-//     // console.log(key);
-// }
+fuction myFunc(){
+    console.log(foo);
+
+    var foo = 9;
+}
