@@ -114,7 +114,7 @@
     
 // })
 
-// 4th option
+// ? 4th option
 
 // Method 1: Using the for/of loop: The for/of loop is used to loop over values of an iterable object. This includes arrays, strings, nodeLists, and HTMLCollections.
 // The syntax of this loop is similar to the for/in loop. The object must be iterable to be used with this loop.
