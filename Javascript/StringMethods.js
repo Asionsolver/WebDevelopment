@@ -47,3 +47,4 @@ slice() extracts a part of a string and returns the extracted part in a new stri
 The method takes 2 parameters: the start position, and the end position (end not included).
 */
 console.log(s.slice(5,10));
+console.log(s.slice(5));
