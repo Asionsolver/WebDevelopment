@@ -10,4 +10,4 @@
      console.log('I will call after 5 second')
  }, 3000)
 
- console.log(another(34, 85))
+ console.log(another(34, 85));
