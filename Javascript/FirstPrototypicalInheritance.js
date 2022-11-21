@@ -18,7 +18,15 @@ square.prototype.draw = function(){
     console.log('I am a Draw Method');
 }
 
-var shape = new shape();
-var sqr = new square(10);
+var shape = new shape(); // shape -> Shape -> Object
+var sqr = new square(10); // sqr -> Square -> Object
 
 // sqr -> square -> shape -> Object
+
+function circle(){
+
+}
+
+circle.prototype = Object.create(shape.prototype);
+
+var cir = new circle();
