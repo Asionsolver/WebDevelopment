@@ -1,0 +1,22 @@
+What is DOM?
+DOM is a Document Object Model & Programming Interface for HTML that defines HTML Object, properties, method & events to get,change, add, or delete HTML elements.
+
+***? Now Javascript can ?***
+
+1. Change HTML elements
+2. Change HTML attributes
+3. Change CSS style
+4. Add HTML elements & attributes
+5. remove HTML elements & attributes
+6. React to HTML events
+
+***? JavaScript - HTML DOM Methods ?***
+
+1. HTML DOM methods are actions you can perform (on HTML Elements).
+2. HTML DOM properties are values (of HTML Elements) that you can set or change.
+
+***? Difference between innerHtml and innerText ?***
+
+innerText returns all text contained by an element and all its child elements. innerHtml returns all text, including html tags, that is contained by an element.
+
+
