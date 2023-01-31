@@ -1,3 +1,12 @@
+
+// ! await can only be used inside an async function
+// async function hello(){
+//     return 'Hello World';
+// }
+
+// console.log(hello());
+
+
 const paymentSuccess = false;
 const marks = 90;
 
@@ -36,23 +45,33 @@ function progress(){
 function getCertificate(){
     console.log('Preparing your certificate...')
 
-    // const promises = new Promise.resolve('Congrats! You got the certificate.') //smaller syntax
-
     const promises = new Promise(function(resolve){
         setTimeout(() => {
             resolve('Congrats! You got the certificate.' )
         }, 1000);
     })
-    
+
     return promises;
 }
 
-enroll()
-        .then(progress)
-        .then(getCertificate)
-        .then(function(value){
-            console.log(value);
-        })
-        .catch(function(error){
-            console.log(error)
-        })
+async function course(){
+    try{
+        await enroll();
+        await progress();
+        await getCertificate();
+    }catch(error){
+        console.log(error);
+    }
+}
+
+course();
+
+// enroll()
+//         .then(progress)
+//         .then(getCertificate)
+//         .then(function(value){
+//             console.log(value);
+//         })
+//         .catch(function(error){
+//             console.log(error)
+//         })
