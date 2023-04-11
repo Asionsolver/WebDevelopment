@@ -6,6 +6,7 @@ let car ={
     model:500,
     price: 5000000,
     weight: 1000,
+    "engine type": "v8",  // multiword property name must be quoted
 
     start: function(){
         console.log("Car started");
@@ -18,6 +19,11 @@ let car ={
         console.log("Car is driving");
     }
 };
+
+// car.engine type = "v6"; // SyntaxError: Unexpected identifier
+// car["engine type"] = "v6";
+let engineType = "engine type";
+// car[engineType] = "v4";
 
 const person = {
     firstName: "John",
@@ -38,6 +44,14 @@ I.E. this.firstName means the firstName property of person.
 
 */
 
-console.log(car.color);
-console.log(car["color"]);
-car.start();
+// console.log(car.color);
+// console.log(car["color"]);
+// car.start();
+
+let fruit = prompt("Which fruit to buy?", "apple");
+
+let bag = {
+  [fruit]: 5, // the name of the property is taken from the variable fruit
+};
+
+console.log( bag.apple ); // 5 if fruit="apple"

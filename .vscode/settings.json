@@ -1,5 +1,5 @@
 {
   "cmake.sourceDirectory": "${workspaceFolder}/.",
   "cmake.configureOnOpen": false,
-  "cSpell.words": ["Kumar", "Redeclared", "Redeclaring"]
+  "cSpell.words": ["Kumar", "multiword", "Redeclared", "Redeclaring"]
 }
