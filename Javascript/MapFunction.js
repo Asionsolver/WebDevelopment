@@ -17,7 +17,7 @@ console.log(sqrArr)
 
 //     return newArr
 // }
-// console.log('Orginal array is '+'['+arr)
+// console.log('Original array is '+'['+arr)
 // console.log(myMap(arr))
 
 
@@ -34,7 +34,7 @@ console.log(sqrArr)
 // var resultQuibe = myMap(arr, function(value) {
 //     return value * value * value
 // })
-// console.log('Orginal array is ' + '[' + arr + ']')
+// console.log('Original array is ' + '[' + arr + ']')
 // console.log('The result of quibe is ' + '[' + resultQuibe + ']')
 //     // console.log(resultQuibe)
 
@@ -43,5 +43,5 @@ console.log(sqrArr)
 // })
 
 
-// console.log('Orginal array is ' + '[' + arr + ']')
+// console.log('Original array is ' + '[' + arr + ']')
 // console.log('The result of multiply by 10 is ' + '[' + resultMten + ']')
