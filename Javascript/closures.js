@@ -139,3 +139,22 @@
 // }
 
 // async();
+
+
+//add ten closure example in asynchronous function level: intermediate
+
+
+// var a;
+
+// function async() {
+//    a = 20;
+//   var myFunc = function () {
+//     console.log(a);
+//   };
+//   setTimeout(myFunc, 5000);
+// }
+
+// async();
+
+// a = 30
+
