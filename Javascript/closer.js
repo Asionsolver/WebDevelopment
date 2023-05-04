@@ -54,17 +54,39 @@
 
 
 
- function bankAccount(initialBalance) {
-    var balance = initialBalance;
-    return function() {
-        return balance;
-    };
-}
+//  function bankAccount(initialBalance) {
+//     var balance = initialBalance;
+//     return function() {
+//         return balance;
+//     };
+// }
 
-var account = bankAccount(1000000);
-console.log(account());
+// var account = bankAccount(1000000);
+// console.log(account());
 
 // console.log(balance) // ReferenceError: balance is not defined
+
+
+// add sixth closure example level: intermediate
+(function(){
+    var num1 = 2;
+    var num2 = 3;
+
+    var sum = function(){
+        return num1 + num2;
+    };
+
+    console.log(sum());
+    console.dir(sum);
+
+    var num1 = 3;
+    var num2 = 4;
+
+    console.log(sum());
+    console.dir(sum);
+
+
+})();
 
 
 
