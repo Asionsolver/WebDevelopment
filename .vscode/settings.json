@@ -1,5 +1,6 @@
 {
   "cmake.sourceDirectory": "${workspaceFolder}/.",
   "cmake.configureOnOpen": false,
-  "cSpell.words": ["Kumar", "multiword", "Redeclared", "Redeclaring"]
+  "cSpell.words": ["Kumar", "multiword", "Redeclared", "Redeclaring"],
+  "livePreview.defaultPreviewPath": "/Javascript/text.html"
 }

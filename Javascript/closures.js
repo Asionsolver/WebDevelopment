@@ -101,6 +101,28 @@
 // console.dir(sum); // not closure option show in console this console show script option
 // })();
 
+//add eight closure example level: intermediate
+
+// function stopWatch(){
+//     let startTime = Date.now();
+//     function getDelay(){
+//         console.log(Date.now() - startTime);
+//     }
+//     return getDelay;
+// }
+
+// var timer = stopWatch();
+
+// // now create fake delay
+// for(let i = 0; i < 100000000; i++){
+//     let foo = Math.random() * 10000000;
+// }
+
+// timer();
+
+// timer = null;
+// timer(); // uncaught type error: timer is not a function because timer is null
+
 
 
 
