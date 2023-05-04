@@ -68,25 +68,40 @@
 
 
 // add sixth closure example level: intermediate
-(function(){
-    var num1 = 2;
-    var num2 = 3;
+// (function(){
+//     var num1 = 2;
+//     var num2 = 3;
 
-    var sum = function(){
-        return num1 + num2;
-    };
+//     var sum = function(){
+//         return num1 + num2;
+//     };
 
-    console.log(sum());
-    console.dir(sum);
+//     console.log(sum());
+//     console.dir(sum);
 
-    var num1 = 3;
-    var num2 = 4;
+//     var num1 = 3;
+//     var num2 = 4;
 
-    console.log(sum());
-    console.dir(sum);
+//     console.log(sum());
+//     console.dir(sum);
 
 
-})();
+// })();
+
+// add seventh closure example level: intermediate
+
+// (function(){let num1 = 2;
+// let num2 = 3;
+
+// let sum = function(){
+//     return num1 + num2;
+// }
+
+// // console.log(sum());
+// console.dir(sum); // not closure option show in console this console show script option
+// })();
+
+
 
 
 
