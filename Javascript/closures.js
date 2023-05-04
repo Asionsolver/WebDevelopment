@@ -158,3 +158,33 @@
 
 // a = 30
 
+//add eleventh closure example in forLoop function level: expert
+
+// for (let i = 0; i <  5; i++) {
+//     const f = ()=> {
+//         console.log(i);
+//     }
+//     f();
+// }
+
+// for(let i = 0; i < 5; i++) {
+//     const  myFunc = function() {
+//         console.log(i);
+//     }
+//     console.log(i);
+//     console.dir(myFunc);
+//     setTimeout(myFunc, 3000);
+// }
+
+// console.log("After for loop");
+
+// for(var i = 0; i < 5; i++) {
+//     const  myFunc = function() {
+//         console.log(i);
+//     }
+//     console.log(i);
+//     console.dir(myFunc);
+//     setTimeout(myFunc, 3000);
+// }
+
+// console.log(i);
