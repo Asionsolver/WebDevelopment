@@ -52,8 +52,6 @@
 
 // console.dir(myFunc);
 
-
-
 //  function bankAccount(initialBalance) {
 //     var balance = initialBalance;
 //     return function() {
@@ -65,7 +63,6 @@
 // console.log(account());
 
 // console.log(balance) // ReferenceError: balance is not defined
-
 
 // add sixth closure example level: intermediate
 // (function(){
@@ -84,7 +81,6 @@
 
 //     console.log(sum());
 //     console.dir(sum);
-
 
 // })();
 
@@ -123,7 +119,23 @@
 // timer = null;
 // timer(); // uncaught type error: timer is not a function because timer is null
 
+//add nine closure example in asynchronous function level: intermediate
 
+// function async() {
+//   var a = 2;
 
+//   setTimeout(function () {
+//     console.log(a);
+//   }, 5000);
+// }
 
+// async();
+// function async() {
+//   var a = 2;
+//   var myFunc = function () {
+//     console.log(a);
+//   };
+//   setTimeout(myFunc, 5000);
+// }
 
+// async();
