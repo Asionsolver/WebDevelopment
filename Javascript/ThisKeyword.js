@@ -1,3 +1,14 @@
+// function myFunction() {
+//     console.log(this);
+// }
+
+// new myFunction();
+
+
+
+
+
+
 // const person = {
 //     firstName: "John",
 //     lastName : "Doe",
@@ -76,27 +87,27 @@
 
 // asion.father.printName();
 
-// ! Explicit(স্পষ্ট) binding
+// // ! Explicit(স্পষ্ট) binding
 
-var printName = function(vertu, vertu2, vertu3, vertu4) {
-    console.log(`This person name is ${this.name} and this age is ${this.age}. He is a ${vertu}, ${vertu2}, ${vertu3}, ${vertu4} boy.`);
-};
+// var printName = function(vertu, vertu2, vertu3, vertu4) {
+//     console.log(`This person name is ${this.name} and this age is ${this.age}. He is a ${vertu}, ${vertu2}, ${vertu3}, ${vertu4} boy.`);
+// };
 
-var ashis = {
-    name: "Ashis",
-    age: 21,
-};
+// var ashis = {
+//     name: "Ashis",
+//     age: 21,
+// };
 
-var vertu = 'Handsome';
-var vertu2 = 'Beautiful';
-var vertu3 = 'Cool';
-var vertu4 = 'Fantastic';
+// var vertu = 'Handsome';
+// var vertu2 = 'Beautiful';
+// var vertu3 = 'Cool';
+// var vertu4 = 'Fantastic';
 
-var arr = [vertu, vertu2, vertu3, vertu4]
+// var arr = [vertu, vertu2, vertu3, vertu4]
 
-// printName.call(ashis, vertu, vertu2, vertu3, vertu4);
-// printName.apply(ashis, arr);
-var print = printName.bind(ashis, vertu, vertu2, vertu3, vertu4); // bind function return a instance of function
-print();
+// // printName.call(ashis, vertu, vertu2, vertu3, vertu4);
+// // printName.apply(ashis, arr);
+// var print = printName.bind(ashis, vertu, vertu2, vertu3, vertu4); // bind function return a instance of function
+// print();
 
 
