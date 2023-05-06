@@ -1,4 +1,4 @@
-var Rectangle = function(width, height) {
+ var Rectangle = function(width, height) {
     this.width = width
     this.height = height
 
