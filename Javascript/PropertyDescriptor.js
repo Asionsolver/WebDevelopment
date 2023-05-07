@@ -3,6 +3,7 @@ var person = {
 };
 
 // console.log(person)
+// person.toString();
 
 // for (var i in person) {
 //     console.log(i);
@@ -25,4 +26,14 @@ Object.defineProperty(person, "name", {
     configurable: false,
     writable: false, 
 });
+
+Object.keys(person); // []
+
+for (const i in person) {
+    console.log(i); // undefined
+}
+
+person.name = "Greg"; //cannot change the value because writable is false 
+console.log(person.name); // "Nicholas"
+
 
