@@ -11,7 +11,8 @@ function Square(width){
     this.width = width;
 }
 
-// Square.prototype = O   bject.create(shape.prototype);
+Square.prototype = Object.create(shape.prototype);
+Square.prototype.constructor = Square;
 
 Square.prototype.draw = function(){
     console.log('I am a Draw Method');
