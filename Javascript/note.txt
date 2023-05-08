@@ -1,3 +1,26 @@
+! I don't know what is Javascript?
+
+JavaScript is a programming language used primarily to make websites interactive. It runs in your web browser and allows you to add functionality to web pages, such as pop-ups, animations, and dynamic content. JavaScript is also used in other environments, such as server-side applications and desktop applications.
+
+Some common uses of JavaScript include form validation, making elements on a page change in response to user actions, displaying messages and alerts, and retrieving data from external sources.
+
+JavaScript is a powerful language that is constantly evolving, and is used by web developers all over the world to create engaging and dynamic websites.
+
+
+! Why javascript is functional programming language?
+
+JavaScript is often described as a "functional programming language" because it supports many of the features and concepts that are central to functional programming.
+
+In functional programming, the emphasis is on creating functions that perform specific tasks and can be composed together to solve more complex problems. Functions are treated as first-class citizens, which means that they can be passed around as arguments to other functions, returned as values, and assigned to variables.
+
+JavaScript supports all of these features, as well as other functional programming concepts such as closures, immutability, and higher-order functions.
+
+Closures allow functions to access variables from their outer scopes even after those scopes have been exited. Immutability means that data is treated as immutable and unchanging, which helps to prevent unexpected side effects. Higher-order functions are functions that can take other functions as arguments or return functions as their results, which enables powerful abstractions and code reuse.
+
+All of these concepts are central to functional programming, and JavaScript's support for them makes it a popular choice for developers who want to write code in a functional style.
+
+
+
 ! Objects:
 
 ? In contrast, objects are used to store keyed collections of various data and more complex entities. In JavaScript, objects penetrate almost every aspect of the language. So we must understand them first before going in-depth anywhere else.
