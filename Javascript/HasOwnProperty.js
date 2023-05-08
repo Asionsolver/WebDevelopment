@@ -1,4 +1,4 @@
-function square(width){
+  function square(width){
     this.width = width;
 
     this.getWidth = function(){

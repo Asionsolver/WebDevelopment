@@ -1,4 +1,4 @@
-var obj = {
+ var obj = {
         x: 40,
         y: 54,
         z: 34

@@ -1,32 +1,32 @@
-function shape(){
+function Shape(){
 
 }
 
-shape.prototype = {
+Shape.prototype = {
     common: function(){
         console.log("I am a Method");
     }
 }
 
-function square(width){
+function Square(width){
     this.width = width;
 }
 
-square.prototype = Object.create(shape.prototype);
+Square.prototype = Object.create(Shape.prototype);
 
-square.prototype.draw = function(){
+Square.prototype.draw = function(){
     console.log('I am a Draw Method');
 }
 
-var shape = new shape(); // shape -> Shape -> Object
-var sqr = new square(10); // sqr -> Square -> Object
+var shape = new Shape(); // shape -> Shape -> Object
+var sqr = new Square(10); // sqr -> Square -> Object
 
-// sqr -> square -> shape -> Object
+//! our focus: sqr -> Square -> shape -> Object
 
 function circle(){
 
 }
 
-circle.prototype = Object.create(shape.prototype);
+circle.prototype = Object.create(Shape.prototype);
 
 var cir = new circle();
