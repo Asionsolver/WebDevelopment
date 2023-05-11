@@ -1,14 +1,23 @@
-function testMe() {
-    console.log(this);
-}
+// function testMe() {
+//     console.log(this);
+// }
 
-testMe(); // Window
+// testMe(); // Window
+
+// let obj = {
+//     testMe: 'testMe',
+//     testMe2: function() {
+//         console.log(this);
+//     }
+// };
+
+// obj.testMe2(); // obj
 
 let obj = {
     testMe: 'testMe',
-    testMe2: function() {
+    print: () => {
         console.log(this);
     }
 };
 
-obj.testMe2(); // obj
+obj.print();
