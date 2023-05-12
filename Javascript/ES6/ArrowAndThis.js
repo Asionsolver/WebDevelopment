@@ -34,3 +34,21 @@ let obj2 = {
 };
 
 obj2.print(); // Hello undefined
+
+
+let obj3 = {
+    name: 'Ashis',
+    print: function () {
+        let self = this;
+
+        setTimeout(function () {
+            console.log(`Hello ${this.name}`);
+        }, 1000);
+    }
+};
+
+obj3.print();
+
+
+
+
