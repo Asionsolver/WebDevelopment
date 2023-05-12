@@ -13,11 +13,24 @@
 
 // obj.testMe2(); // obj
 
-let obj = {
-    testMe: 'testMe',
-    print: () => {
-        console.log(this);
+// let obj = {
+//     testMe: 'testMe',
+//     print: () => {
+//         console.log(this);
+//     }
+// };
+
+// obj.print();
+
+
+let obj2 = {
+    name: 'Ashis',
+    print: function () {
+        console.log(this.name); // Ashis
+        setTimeout(function () {
+            console.log(`Hello ${this.name}`);
+        }, 1000);
     }
 };
 
-obj.print();
+obj2.print(); // Hello undefined
