@@ -22,39 +22,51 @@
 
 // obj.print();
 
-let obj2 = {
-  name: "Ashis",
-  print: function () {
-    console.log(this.name); // Ashis
-    setTimeout(function () {
-      console.log(`Hello ${this.name}`);
-    }, 1000);
-  },
-};
+// let obj2 = {
+//   name: "Ashis",
+//   print: function () {
+//     console.log(this.name); // Ashis
+//     setTimeout(function () {
+//       console.log(`Hello ${this.name}`);
+//     }, 1000);
+//   },
+// };
 
-obj2.print(); // Hello undefined
+// obj2.print(); // Hello undefined
 
-let obj4 = {
-  name: "Ashis",
-  print: function () {
-    let self = this;
+// let obj4 = {
+//   name: "Ashis",
+//   print: function () {
+//     let self = this;
 
-    setTimeout(function () {
-      console.log(`Hello ${self.name}`);
-    }, 1000);
-  },
-};
+//     setTimeout(function () {
+//       console.log(`Hello ${self.name}`);
+//     }, 1000);
+//   },
+// };
 
-obj4.print(); // Hello Ashis
+// obj4.print(); // Hello Ashis
 
-let obj6 = {
-  name: "Ashis",
-  print: function () { 
-    setTimeout(function () {
-        console.log(`Hello ${self.name}`);
-      }.bind(this), 1000);
-  },
-};
+// let obj6 = {
+//   name: "Ashis",
+//   print: function () { 
+//     setTimeout(function () {
+//         console.log(`Hello ${this.name}`);
+//       }.bind(this), 1000);
+//   },
+// };
 
-obj6.print();
+// obj6.print();
+
+let obj5 = {
+    name: "Ashis",
+    print: function () { 
+      setTimeout(() => {
+        console.log(`Hello ${this.name}`);
+      }, 1000);
+    },
+  };
+  
+  obj5.print();
+  
 
