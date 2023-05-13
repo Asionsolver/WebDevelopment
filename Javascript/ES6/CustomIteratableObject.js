@@ -12,9 +12,23 @@ let obj ={
                 }
             }
         }
-    }
+    }  
 }
 
-for(let i of obj){
-    console.log(i);
-}
+// for(let i of obj){
+//     console.log(i);
+// }
+
+let iterate = obj[Symbol.iterator]();
+
+console.log(iterate.next())
+console.log(iterate.next())
+console.log(iterate.next())
+console.log(iterate.next())
+console.log(iterate.next())
+console.log(iterate.next())
+console.log(iterate.next())
+console.log(iterate.next())
+console.log(iterate.next())
+console.log(iterate.next())
+console.log(iterate.next())

@@ -12,6 +12,13 @@ const obj = {
 // console.log(arr[Symbol.iterator]());
 const numIterator = arr[Symbol.iterator]();
 
+console.log(numIterator.next());
+console.log(numIterator.next());
+console.log(numIterator.next());
+console.log(numIterator.next());
+console.log(numIterator.next());
+console.log(numIterator.next());
+
 
 
 // for(let i = 0; i < arr.length; i++) {
@@ -23,9 +30,9 @@ const numIterator = arr[Symbol.iterator]();
 // }
 
 
-for (let i in obj) {
-    console.log(i);
-}
+// for (let i in obj) {
+//     console.log(i);
+// }
 
 // object iterate in for loop
 
