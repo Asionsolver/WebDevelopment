@@ -9,6 +9,8 @@ const obj = {
 
 // console.dir(arr);
 // console.dir(obj);
+// console.log(arr[Symbol.iterator]());
+const numIterator = arr[Symbol.iterator]();
 
 
 
@@ -31,3 +33,4 @@ for (let i in obj) {
 //     console.log(obj[Object.keys(obj)[i]]);
 // }
     
+
