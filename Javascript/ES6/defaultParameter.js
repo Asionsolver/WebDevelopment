@@ -1,3 +1,9 @@
+function add(x) {
+    return x*x;
+}
+
+console.log(add()); // NaN
+
 function sqr(x = 2) {
     return x * x;
 }
@@ -11,14 +17,14 @@ function greet(name = 'Ashis', msg = 'Hello') {
     return `${msg} ${name}`;
 }
 
-console.log(greet()); // Hello Ashis
+greet(); // Hello Ashis
 
-console.log(greet('Ashis', 'Hi')); // Hi Ashis
+greet('Ashis', 'Hi'); // Hi Ashis
 
-console.log(greet('Ashis')); // Hello Ashis
+greet('Ashis'); // Hello Ashis
 
-console.log(greet(undefined, 'Hi')); // Hi Ashis
+greet(undefined, 'Hi'); // Hi Ashis
 
-console.log(greet('Ashis', undefined)); // Hello Ashis
+greet('Ashis', undefined); // Hello Ashis
 
-console.log(greet('Ashis', null));
+greet('Ashis', null);
