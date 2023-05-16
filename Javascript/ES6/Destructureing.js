@@ -17,3 +17,16 @@ let person = {
 let {name, age, section, roll, address:{state, street, city, country}} = person;
 
 console.log(name, age, section, roll, state, street, city, country);
+
+let arr = [1, 2, 3, 4, 5];
+
+let [a, b, c, d, e] = arr;
+
+console.log(a, b, c, d, e); 
+
+
+let arr2 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+let [first, second, third, , , , , ,nine] = arr2;
+
+console.log(first, second, third, nine);
