@@ -11,11 +11,27 @@ for(let value of str){
 }
 
 const obj ={
-    a:20,
-    b:20,
-    c:30
+    start: 1,
+    end:5,
+    [Symbol.iterator]: function* (){
+        let currentValue = this.start;
+        while(currentValue <= this.end){
+            yield currentValue++;
+        }
+    }
 }
 
-for(let value of obj){
-    console.log(value)
-}
+// for(let value of obj){
+    // console.log(value)
+// } 
+
+
+
+
+// let iterate = obj[Symbol.iterator]()
+// console.log(iterate.next())
+// console.log(iterate.next())
+// console.log(iterate.next())
+// console.log(iterate.next())
+// console.log(iterate.next())
+// console.log(iterate.next())
