@@ -41,6 +41,7 @@ body {
 
 .menu-bar ul li {
   padding: 10px 30px;
+  position: relative;
 }
 
 .menu-bar ul li a {
@@ -54,7 +55,35 @@ body {
 }
 
 .drop-down-menu {
+  display: none;
+}
+
+.menu-bar ul li:hover .drop-down-menu {
   display: block;
   width: 100%;
   position: absolute;
+  left: 0;
+  top: 100%;
+  background-color: var(--color-black);
+}
+
+.menu-bar ul li:hover .drop-down-menu ul {
+  display: block;
+  margin: 10px;
+}
+
+.drop-down-menu ul li {
+  width: 150px;
+  padding: 10px;
+}
+
+.dorp-down-menu-team {
+  display: none;
+}
+.drop-down-menu ul li:hover .dorp-down-menu-team {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 150px;
+  background-color: var(--color-black);
 }

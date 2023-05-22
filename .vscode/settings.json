@@ -2,5 +2,5 @@
   "cmake.sourceDirectory": "${workspaceFolder}/.",
   "cmake.configureOnOpen": false,
   "cSpell.words": ["Kumar", "multiword", "Redeclared", "Redeclaring"],
-  "livePreview.defaultPreviewPath": "/Javascript/text.html"
+  "livePreview.defaultPreviewPath": "/CssAnimation/Dropdown2/index.html"
 }
