@@ -52,3 +52,9 @@ body {
 .menu-bar ul li a:hover {
   color: var(--color-primary);
 }
+
+.drop-down-menu {
+  display: block;
+  width: 100%;
+  position: absolute;
+}
