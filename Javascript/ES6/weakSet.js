@@ -19,4 +19,4 @@ let weakSet = new WeakSet([a,b]);
 a = null;
 
 console.log(weakSet.has(a)) 
-console.log(weakSet.has(b)) 
+console.log(weakSet.has(b))
