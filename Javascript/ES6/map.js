@@ -9,6 +9,8 @@ let map = new Map([
     ['b', 2],
 ]);
 
+map.set({name: 'John'}); // store the object as a key
+
 console.log(map.get('a')); // 1
 
 map.set('c', 3);
