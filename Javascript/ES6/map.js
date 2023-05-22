@@ -29,7 +29,17 @@ console.log(map.keys()); // MapIterator { 'a', 'b', 'c' }
 
 console.log(map.entries()); // MapIterator { [ 'a', 1 ], [ 'b', 2 ], [ 'c', 3 ] }  
 
+// map for-of loop
 
+for (let [key, value] of map) {
+    console.log(key + ' = ' + value);
+}
+
+// map.forEach
+
+map.forEach((value, key) => {
+    console.log(key + ' = ' + value);
+});
 
 
 
