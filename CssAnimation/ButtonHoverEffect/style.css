@@ -4,7 +4,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: #222;
+  background: #fff;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -63,5 +63,5 @@ a:hover::after {
 }
 
 a:hover {
-  color: #fff;
+  color: #222;
 }
