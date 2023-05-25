@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #222;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 25px;
+  letter-spacing: 3px;
+  padding: 25px 50px;
+  border: 2px solid #f6b93b;
+  transition: all 0.5s;
+  position: relative;
+  color: #f6b93b;
+  overflow: hidden;
+}
+
+a::before,
+a::after,
+span::before,
+span::after {
+  content: "";
+  position: absolute;
+  width: 25%;
+  height: 100%;
+  background-color: #f6b93b;
+  z-index: -1;
+  transition: all 0.2s;
+}
+
+a::before {
+  /* ! Effect One */
+  /* top: 0; */
+  /* left: -25%; */
+
+  /* ! Effect TWO */
+  top: 100%;
+  left: 0;
+}
+
+a:hover::before {
+  top: 0;
+  left: 0;
+}
+
+a::after {
+  top: -100%;
+  left: 25%;
+
+  /* ! Effect two */
+  transition-delay: 0.1s;
+}
+
+a:hover::after {
+  top: 0;
+  left: 25%;
+}
+
+a span::before {
+  top: 100%;
+  right: 25%;
+  /* ! Effect two */
+  transition-delay: 0.2s;
+}
+
+a:hover span::before {
+  top: 0;
+  right: 25%;
+}
+
+a span::after {
+  /* ! Effect TWO */
+  top: -100%;
+  right: 0;
+  transition-delay: 0.3s;
+
+  /* ! Effect One */
+  /* top: 0; */
+  /* right: -25%; * */
+}
+
+a:hover span::after {
+  top: 0;
+  right: 0;
+}
+
+a:hover {
+  color: #222;
+  /* font-weight: 600; */
+}
