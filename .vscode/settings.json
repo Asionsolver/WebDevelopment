@@ -2,5 +2,5 @@
   "cmake.sourceDirectory": "${workspaceFolder}/.",
   "cmake.configureOnOpen": false,
   "cSpell.words": ["Kumar", "multiword", "Redeclared", "Redeclaring"],
-  "livePreview.defaultPreviewPath": "/CssAnimation/cutButton.html"
+  "livePreview.defaultPreviewPath": "/CssAnimation/BroderGrowingButton/index.html"
 }
