@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #000;
+}
+
+.card {
+  max-width: 350px;
+  width: 100%;
+  padding: 30px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  right: 4px;
+  bottom: 4px;
+  background-color: hsl(240, 9%, 14%);
+  z-index: -1;
+}
+
+.card::after {
+  content: "";
+  position: absolute;
+  background-image: linear-gradient(hsl(340, 82%, 52%), hsl(340, 82%, 52%)),
+    linear-gradient(hsl(262, 74%, 58%), hsl(262, 74%, 58%));
+  height: 200%;
+  width: 200%;
+  top: -50%;
+  left: -50%;
+  z-index: -2;
+  background-size: 40% 40%;
+  background-position: 0 0, 100% 100%;
+  background-repeat: no-repeat;
+  animation: rotate 4s linear infinite;
+  animation-play-state: paused;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card:hover::after {
+  opacity: 1;
+  animation-play-state: running;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.card span {
+  font-size: 80px;
+  color: #fdfdfd;
+}
+
+.card h3 {
+  font-size: 25px;
+  color: #c9c2c2;
+}
+
+.card p {
+  font-size: 15px;
+  color: #8b8a8a;
+  margin-top: 15px;
+}
