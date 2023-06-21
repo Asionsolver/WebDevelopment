@@ -2,7 +2,7 @@ class Shape {
   constructor(color) {
     this.color = color;
   }
-  color() {
+  colors() {
     console.log(this.color);
   }
 
@@ -28,13 +28,13 @@ class Circle extends Shape {
   }
 }
 
-let r1 = new Rectangle('red',10, 20);
-console.log(r1);
-r1.draw();
+// let r1 = new Rectangle('red',10, 20);
+// console.log(r1);
+// r1.draw();
 // r1.color();
 
  
-// let c1 = new Circle('Red');
-// console.log(c1);
-// c1.draw();
-// c1.color();
+let c1 = new Circle('Red');
+console.log(c1);
+c1.draw();
+c1.colors();
