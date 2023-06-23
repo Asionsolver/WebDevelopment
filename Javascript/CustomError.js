@@ -13,7 +13,7 @@ try {
   throw new CustomError("This is a custom error");
   console.log("I am line 3");
 } catch (e) {
-//   console.log(e); // stacktrace
-console.dir(e); // stacktrace
-    // console.log(e.message); // This is a custom error
+  //   console.log(e); // stacktrace
+  // console.dir(e);
+  console.log(e.message); // This is a custom error
 }
