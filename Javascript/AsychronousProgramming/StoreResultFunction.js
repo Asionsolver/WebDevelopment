@@ -1,6 +1,6 @@
 // function sayMyName(name) {
 //   let result;
-//   setTimeout(() => {
+//   setTimeout(() => {I
 //     result = name;
 //     console.log("I have finished...");
 //   }, 3000);
@@ -12,10 +12,11 @@
 
 function sayMyName(name) {
   setTimeout(() => {
-   console.log(name);
+    console.log(name);
+    result = name;
     console.log("I have finished...");
   }, 3000);
 }
 
 let myName = sayMyName("John");
-console.log(myName); // undefined   
+console.log(myName); // undefined
