@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #161425;
+  color: #fff;
+}
+
+.heading {
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.heading .one {
+  color: #02d341;
+}
+
+.heading .two {
+  color: #d34402;
+}
+
+.heading .three {
+  color: #0210d3;
+}
+
+.heading .four {
+  color: #c102d3;
+}
+
+.heading .five {
+  color: #bed302;
+}
+
+.container {
+  max-width: 1100px;
+  height: 100vh;
+  margin: auto;
+  padding: 0 20px;
+  overflow: hidden;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.flex {
+  display: flex;
+
+  /* ! by default flex-wrap is nowrap */
+  /* flex-wrap: nowrap; */
+  /* flex-wrap: wrap; */
+  /* flex-wrap: wrap-reverse; */
+
+  /* ! by default flex-direction is row */
+  /* flex-direction: row; */
+  /* flex-direction: row-reverse; */
+  /* flex-direction: column; */
+  /* flex-direction: column-reverse; */
+
+  /* ? short hand between flex-direction and flex-wrap */
+  flex-flow: row wrap;
+
+  /* ! Justify-Content work main axis or x-axis.By default justify-content is flex-start */
+
+  /* justify-content: flex-start; */
+  /* justify-content: flex-end; */
+  /* justify-content: center; */
+  /* justify-content: space-between; */
+  /* justify-content: space-around; */
+  /* justify-content: space-evenly; */
+
+  /* ! Align-items work cross axis or y-axis. align-items controls the alignment of flex items along the cross-axis of the flex container. It affects the alignment of individual items within a single line.By default align-items is stretch */
+
+  /* align-items: stretch; */
+  /* align-items: flex-start; */
+  /* align-items: flex-end; */
+  /* align-items: center; */
+  /* align-items: baseline; */
+
+  /* ! Align-content work cross axis or y-axis. Align-content controls the distribution of space along the cross-axis when there is extra space available within the flex container. It affects the alignment of lines of items if they wrap onto multiple lines. By default align-content is stretch */
+
+  /* align-content: stretch; */
+  /* align-content: flex-start; */
+  /* align-content: flex-end; */
+  /* align-content: center; */
+  /* align-content: space-between; */
+  /* align-content: space-around; */
+  /* align-content: space-evenly; */
+
+  /* ? Align-items controls the alignment of individual items within a single line. */
+  /* ? Align-content controls the distribution of space between lines of items when they wrap onto multiple lines. */
+}
+
+/* ! Flex-grow is a property that distributes free space in the container. It takes a unitless value that serves as a proportion. By default flex-grow is 0 */
+
+/* ! Flex-shrink is a property that controls the size of the flex items when the size of the container changes. It takes a unitless value that serves as a proportion. By default flex-shrink is 1 */
+
+.container .item {
+  /* width: 100%; */
+  width: 20%;
+  height: 60px;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  border-radius: 5px;
+  /* flex-grow: 1; */
+  flex-shrink: 1;
+  /* flex-basis: 200px; */
+}
+
+.container .one {
+  background: #02d341;
+  order: 2;
+}
+.container .two {
+  background: #d34402;
+  order: 3;
+}
+.container .three {
+  background: #0210d3;
+  order: 1;
+}
+.container .four {
+  background: #c102d3;
+  order: 6;
+}
+.container .five {
+  background: #bed302;
+  order: 4;
+}
+
+.container .six {
+  background: #7502d3;
+  order: 5;
+}
+
+.container .seven {
+  background: #02a2d3;
+  order: 0;
+}
